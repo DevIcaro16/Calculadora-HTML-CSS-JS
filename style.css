@@ -1,0 +1,239 @@
+/*Para selecionar todos os elementos : */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato","sans-serif";
+
+
+}
+
+/*Para mudar o 'corpo' do site... como a cor de fundo, centralizar os itens, tamanho minimo e etc : */
+
+body{
+
+    background-color: #090e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/*Classe criada Para que seja mostrado apenas a parte da calculadora IMC */
+.hide{
+
+    display: none !important;
+}
+
+/*Personalizando a classe container : */
+.container{
+
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #1d1e33;
+    padding: 2rem;
+
+}
+
+/*Personalizando a div que calcula o IMC :  */
+
+#calc-container h2{
+
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+/*Personalizando a classe que recebe os Valores para  o IMC :  */
+
+.form-inputs{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+/*Personalizando a classe que recebe o peso e a altura para  o IMC :  */
+
+.form-control{
+
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+/*Personalizando o Label da classe form-control :  */
+
+.form-control label{
+
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #ccc;
+}
+
+/*Personalizando o input da classe form-control :  */
+
+.form-control input {
+
+   padding: 1rem 0.5rem ;
+}
+
+
+/*Para deixar cada botao em um canto do container :  */
+
+.action-control{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+/*Personalizando os Botões de Calcular e Limpar : */
+
+button{
+
+    
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: #f44236;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+    flex: 1;
+
+}
+
+
+/*Evento quando o mouse for colocado sobre os Botões :  */
+
+button:hover{
+
+    opacity: 2;
+
+}
+
+/*Para deixar o botão Limpar com uma cor diferente : */
+#botao-limpar{
+
+    background-color: #444;
+}
+
+/*Para centralizar a tabela dos resultados : */
+
+#resultado-container{
+
+    text-align: center;
+   
+}
+
+/*Para Ajustar o estilo dos Valores / Resultados (id's) : */
+#valor-imc{
+
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+
+}
+#situacao-imc{
+
+    font-size: 1.4rem;
+    color: #ccc;
+
+}
+
+#resultado-container h3 {
+
+    margin-top: 1rem;
+    color: #dfdfdf;
+
+
+}
+
+.tabela-imc{
+
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+    
+
+}
+
+
+.tabela-imc{
+
+    font-weight: bold;
+    color:#ccc;
+
+} 
+
+/*Para deixar na linha horizontal e para as tabelas ficarem separadas : */
+.tabela-imc,.tabela-data{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+
+}
+
+/*Para centralizar o espaço entre as tabelas : */
+
+.tabela-imc h4 ,.tabela-data p{
+
+    flex: 1;
+
+}
+
+/*Para informar a contagem do elemento especial, no caso 'Obesidade': */
+
+.tabela-imc h4:nth-child(3),
+.tabela-data p:nth-child(3){
+
+    max-width: 80px;
+
+}
+
+/*Para centralizar o botão voltar : */
+
+.botao-voltar{
+
+    align-self: center;
+    
+    
+
+}
+
+/*Para definir as cores / estados das classificações : */
+
+.bem{
+
+    color: #12db34;
+
+
+}
+.baixo{
+
+    color: #dbce12;
+
+
+}
+.medio{
+
+    color: #db6212;
+
+
+}
+.grave{
+
+    color: #db1912;
+
+
+}
+

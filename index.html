@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - IMC : </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="style.css">
+<script src="index.js" defer></script>
+
+</head>
+<body>
+    
+    <div class="container" >
+
+        <div id="calc-container" >
+
+            <h2>Calculadora MG do IMC : </h2>
+
+            <form id="imc-form">
+
+                <div class="form-inputs">
+
+                    <div class="form-control">
+
+                        <label for="altura">Sua Altura (Em M): </label>
+                        <input type="text" name="altura" id="altura" placeholder="Exemplo : 1,75 m ">
+                
+                    </div>
+
+                    <div class="form-control">
+
+                        <label for="peso">Seu Peso (Em KG): </label>
+                        <input type="text" name="peso" id="peso" placeholder="Exemplo : 70 kg ">
+                
+
+                    </div>
+                </div>
+
+                <div class="action-control">
+
+                    <button id="botao-calcular">Calcular</button>
+                    <button id="botao-limpar">Limpar</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div id="resultado-container" class="hide" >
+
+            <p id="valor-imc"> Seu IMC : <span ></span></p>
+            <p id="situacao-imc"> Situação atual : <span ></span></p>
+            <h3>Confira as classificações do IMC : </h3>
+            <div id="imc-tabela">
+
+                <div class="tabela-imc">
+
+                    <h4>Info</h4>
+                    <h4>Classificação</h4>
+                    <h4>Nivel De Obesidade</h4>
+    
+                </div>
+            </div>
+
+
+            <button id="botao-voltar">Voltar</button>
+      
+       
+
+        </div>
+
+    </div>
+
+</body>
+</html>
